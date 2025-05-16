@@ -8,6 +8,10 @@ const breadcrumbs: BreadcrumbItem[] = [
         title: 'Dashboard',
         href: '/dashboard',
     },
+    {
+        title: 'Post',
+        href: '/posts',
+    },
 ];
 
 export default function Dashboard() {
