@@ -64,6 +64,8 @@ class PostController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate(["title" => "required", "body" => "required"]);
+
+        Post::create(["title" => $request->title, "body" => $request->title]);
     }
 
     /**
