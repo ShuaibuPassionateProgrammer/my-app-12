@@ -15,6 +15,8 @@ export default function Posts() {
 
     const {delete: destroy} = useForm();
 
+    const destroyPost = (e, id) = {};
+
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Posts" />
