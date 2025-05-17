@@ -38,7 +38,8 @@ export default function Posts() {
                                     <td className="px-6 py-2 font-medium text-gray-900 dark:text-white">{id}</td>
                                     <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{title}</td>
                                     <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{body}</td>
-                                    <td className="px-6 py-">
+                                    <td className="px-6 py-2">
+                                        
                                         <Link
                                             href={route("posts.edit", id)}
                                             className="px-3 py-2 text-xs font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-600 cursor-pointer">
