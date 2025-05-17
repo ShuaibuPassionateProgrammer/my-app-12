@@ -21,7 +21,7 @@ export default function PostEdit() {
 
     const { data, setData, errors, post: postForm } = useForm({
         title: post.title || "",
-        
+        body: post.body
     });
 
     const submit: FormEventHandler = (e: FormEvent<Element>) => {
