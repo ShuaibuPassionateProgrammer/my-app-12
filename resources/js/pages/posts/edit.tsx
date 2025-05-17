@@ -16,7 +16,7 @@ const breadcrumbs: BreadcrumbItem[] = [
     },
 ];
 
-export default function Posts() {
+export default function PostEdit() {
 
     const { data, setData, errors, post } = useForm({
         title: "",
