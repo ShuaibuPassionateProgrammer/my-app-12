@@ -66,6 +66,8 @@ class PostController extends Controller
         $request->validate(["title" => "required", "body" => "required"]);
 
         Post::create(["title" => $request->title, "body" => $request->title]);
+
+        return redirect()->route("posts.index");
     }
 
     /**
