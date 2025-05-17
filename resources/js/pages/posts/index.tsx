@@ -19,7 +19,7 @@ export default function Posts() {
     const destroyPost: FormEventHandler = (e: any, id: any): void => {
         e.preventDefault();
         if(confirm("Are you sure you want to delete this post?")) {
-            destroy
+            destroy(route("posts.destroy", id));
         }
     };
 
