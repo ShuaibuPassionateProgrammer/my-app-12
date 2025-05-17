@@ -39,7 +39,7 @@ export default function Posts() {
                                     <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{title}</td>
                                     <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{body}</td>
                                     <td className="px-6 py-2">
-                                        <form onSubmit={(e: FormEvent<HTMLFormElement>) => }></form>
+                                        <form onSubmit={(e: FormEvent<HTMLFormElement>): any => destroyPost(e, id)}></form>
                                         <Link
                                             href={route("posts.edit", id)}
                                             className="px-3 py-2 text-xs font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-600 cursor-pointer">
