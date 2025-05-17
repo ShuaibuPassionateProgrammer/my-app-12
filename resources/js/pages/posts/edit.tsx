@@ -26,7 +26,7 @@ export default function PostEdit() {
 
     const submit: FormEventHandler = (e: FormEvent<Element>) => {
         e.preventDefault();
-        put(route("posts.store"));
+        put(route("posts.update"));
     };
     
     return (
