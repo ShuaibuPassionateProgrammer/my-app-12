@@ -13,6 +13,8 @@ const breadcrumbs: BreadcrumbItem[] = [
 export default function Posts() {
     const { posts } = usePage().props;
 
+    const {delete: destroy} = useForm({});
+
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Posts" />
