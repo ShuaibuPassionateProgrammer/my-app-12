@@ -55,7 +55,7 @@ class PostController extends Controller
 
         return Inertia::render("posts/edit", [
             "post" => $post
-        ]);
+        ]); 
     }
 
     /**
