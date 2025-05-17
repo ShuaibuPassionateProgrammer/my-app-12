@@ -68,6 +68,7 @@ class PostController extends Controller
         $post = Post::find($id);
 
         $post->title = $request->title;
+        $post->body = $request->body;
 
         return redirect()->route("posts.index");
     }
