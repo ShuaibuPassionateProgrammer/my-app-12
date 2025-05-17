@@ -18,6 +18,7 @@ export default function Posts() {
 
     const destroyPost: FormEventHandler = (e: any, id: any): void => {
         e.preventDefault();
+        alert(id);
     };
 
     return (
