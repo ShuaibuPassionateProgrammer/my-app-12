@@ -2,6 +2,7 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
 import { Head, Link, usePage, useForm } from '@inertiajs/react';
+import { FormEventHandler } from "react";
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -15,7 +16,7 @@ export default function Posts() {
 
     const {delete: destroy} = useForm();
 
-    const destroyPost: FormEventHandler = (e: any, id: any) => {};
+    const destroyPost: FormEventHandler = (e: any, id: any): void => {};
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
