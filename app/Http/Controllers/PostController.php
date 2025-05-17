@@ -70,6 +70,8 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->body = $request->body;
 
+        $post->save();
+
         return redirect()->route("posts.index");
     }
 
