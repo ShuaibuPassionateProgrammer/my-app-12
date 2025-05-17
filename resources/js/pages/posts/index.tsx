@@ -25,14 +25,16 @@ export default function Posts() {
                     </Link>
                     <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <th className="px-6 py-3">Id</th>
-                            <th className="px-6 py-3">Title</th>
-                            <th className="px-6 py-3">Body</th>
-                            <th className="px-6 py-3">Actions</th>
+                            <tr>
+                                <th className="px-6 py-3">Id</th>
+                                <th className="px-6 py-3">Title</th>
+                                <th className="px-6 py-3">Body</th>
+                                <th className="px-6 py-3">Actions</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            {posts.map(({id, title, body} : {id: any; title: any; body: any})): Element => (
-                                <tr key={id}  className="odd:bg-white odd:dark:gb-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark">
+                            {posts.map(({id, title, body}: {id: any; title: any; body: any}) => (
+                                <tr key={id} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark">
                                     <td className="px-6 py-2 font-medium text-gray-900 dark:text-white">{id}</td>
                                     <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{title}</td>
                                     <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{body}</td>
@@ -45,7 +47,7 @@ export default function Posts() {
                                         <button className="px-3 py-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-600 ml-1 cursor-pointer">Delete</button>
                                     </td>
                                 </tr>
-                            )}
+                            ))}
                         </tbody>
                     </table>
                 </div>
