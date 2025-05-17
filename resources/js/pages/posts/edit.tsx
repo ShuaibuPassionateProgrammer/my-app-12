@@ -30,7 +30,7 @@ export default function PostEdit() {
     
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title="Posts Create" />
+            <Head title="Posts Edit" />
             <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4">
                 <div className="overflow-x-auto">
                     <Link 
