@@ -19,16 +19,7 @@ export default function Posts() {
     const destroyPost: FormEventHandler = (e: any, id: any): void => {
         e.preventDefault();
         if(confirm("Are you sure you want to delete this post?")) {
-            destroy(route("posts.destroy", id), {
-                method: "delete",
-                preserveScroll: true,
-                onSuccess: () => {
-                    // Optionally, you can add a success message or redirect here
-                },
-                onError: () => {
-                    // Optionally, you can handle errors here
-                }
-            });
+            destroy
         }
     };
 
