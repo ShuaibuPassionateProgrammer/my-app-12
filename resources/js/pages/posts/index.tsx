@@ -15,7 +15,7 @@ export default function Posts() {
 
     const {delete: destroy} = useForm();
 
-    const destroyPost: FormEventHandler = (e, id) = {};
+    const destroyPost: FormEventHandler = (e: any, id: any) => {};
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
