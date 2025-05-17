@@ -11,7 +11,7 @@ import { Textarea } from "@headlessui/react";
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Posts Edit',
+        title: 'Post Edit',
         href: '/posts',
     },
 ];
