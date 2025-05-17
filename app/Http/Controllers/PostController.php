@@ -54,7 +54,7 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
 
         return Inertia::render("posts/edit", [
-            "post" => $post,
+            "post" => $post
         ]);
     }
 
