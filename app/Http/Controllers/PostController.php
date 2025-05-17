@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use App\Models\Post;
 
 class PostController extends Controller
 {
@@ -12,7 +13,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        return Inertia::render('posts/index', []);
+        return Inertia::render("posts/index", [
+            "posts" => Post::latest()->get(),
+        ]);
     }
 
     /**
@@ -20,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render("posts/create", []);
     }
 
     /**
@@ -28,7 +31,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(["title" => "required", "body" => "required"]);
+
+        Post::create(["title" => $request->title, "body" => $request->title]);
+
+        return redirect()->route("posts.index");
     }
 
     /**
@@ -44,7 +51,10 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $post = Post::find(id);
+        return Inertia::render("posts/edit", [
+            "post" => $post
+        ]);
     }
 
     /**
