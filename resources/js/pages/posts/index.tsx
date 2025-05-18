@@ -41,23 +41,6 @@ export default function Posts() {
                                 <th className="px-6 py-3">Actions</th>
                             </tr>
                         </thead>
-                        <tbody>{posts.map(({id, title, body} : {id: any; title: any; body: any}) => (
-                            <tr key={id} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark">
-                                <td className="px-6 py-2 font-medium text-gray-900 dark:text-white">{id}</td>
-                                <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{title}</td>
-                                <td className="px-6 py-2 text-gray-600 dark:text-gray-300">{body}</td>
-                                <td className="px-6 py-2">
-                                    <form onSubmit={(e: FormEvent<HTMLFormElement>): any => destroyPost(e, id)}>
-                                        <Link
-                                            href={route("posts.edit", id)}
-                                            className="px-3 py-2 text-xs font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-600 cursor-pointer">
-                                            Edit
-                                        </Link>
-                                        <button className="px-3 py-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-600 ml-1 cursor-pointer">Delete</button>
-                                    </form>
-                                </td>
-                            </tr>
-                        ))}</tbody>
                         <tbody>
                             {posts.map(({id, title, body}: {id: any; title: any; body: any}) => (
                                 <tr key={id} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark">
