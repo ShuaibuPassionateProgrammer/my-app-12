@@ -16,6 +16,8 @@ class PostController extends Controller
         return Inertia::render("posts/index", [
             "posts" => Post::latest()->get(),
         ]);
+
+        return Inertia::render("post/index", []);
     }
 
     /**
