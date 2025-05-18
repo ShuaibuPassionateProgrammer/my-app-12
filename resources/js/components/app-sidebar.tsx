@@ -15,7 +15,7 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: "Post",
-        url: "/posts",
+        href: "/posts",
         icon: FileIcon
     }
 ];
