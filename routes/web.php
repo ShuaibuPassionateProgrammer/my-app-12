@@ -27,9 +27,9 @@ Route::get("/product/{id}", function ($id) {
 
 // Route optional parameter
 
-Route::get("/product/{category?}", function (string $category = null)) {
+Route::get("/product/{category?}", function (string $category = null) {
     return "Product category = $category";
-}
+});
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
