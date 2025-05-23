@@ -20,7 +20,7 @@ Route::get("/test", function () {
 })->name("test");
 
 Route::get("/product/{id}", function ($id) {
-    return "Product ID = $id";
+    return Inertia::render("Product ID = $id");
 });
 
 require __DIR__.'/settings.php';
