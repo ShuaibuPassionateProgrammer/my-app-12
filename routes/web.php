@@ -21,7 +21,7 @@ Route::get("/test", function () {
 
 // Route required parameter
 
-Route::get("/product/{id}", function ($id) {
+Route::get("/product/{id}", function (string $id) {
     return Inertia::render("Product ID = $id");
 });
 
