@@ -17,7 +17,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 Route::resource('posts', PostController::class)->middleware(['auth']);
 Route::get("/test", function () {
     return Inertia::render("test.index");
-})->name("test");
+});
 
 Route::get("/product/{id}", function ($id) {
     return Inertia::render("Product ID = $id");
