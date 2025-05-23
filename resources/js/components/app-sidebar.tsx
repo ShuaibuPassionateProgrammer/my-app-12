@@ -15,6 +15,7 @@ import {
   IconSearch,
   IconSettings,
   IconUsers,
+  IconLogout
 } from "@tabler/icons-react"
 
 import { NavDocuments } from "@/components/nav-documents"
@@ -61,7 +62,7 @@ const data = {
     {
       title: "Settings",
       url: "/Settings",
-      icon: IconUsers,
+      icon: IconSettings,
     },
   ],
   navClouds: [
@@ -114,9 +115,9 @@ const data = {
   ],
   navSecondary: [
     {
-      title: "Settings",
-      url: "/settings",
-      icon: IconSettings,
+      title: "Logout",
+      url: "/logout",
+      icon: IconLogout,
     },
     // {
     //   title: "Get Help",
