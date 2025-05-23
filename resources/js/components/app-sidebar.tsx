@@ -33,9 +33,9 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    // name: "shadcn",
+    // email: "m@example.com",
+    // avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
     {
@@ -43,7 +43,7 @@ const data = {
       url: "/dashboard",
       icon: IconDashboard,
     },
-    {
+    /*{
       title: "Lifecycle",
       url: "#",
       icon: IconListDetails,
@@ -52,17 +52,17 @@ const data = {
       title: "Analytics",
       url: "#",
       icon: IconChartBar,
-    },
+    },*/
     {
-      title: "Projects",
-      url: "#",
+      title: "Posts",
+      url: "/posts",
       icon: IconFolder,
     },
-    {
-      title: "Team",
-      url: "#",
-      icon: IconUsers,
-    },
+    // {
+    //   title: "Team",
+    //   url: "#",
+    //   icon: IconUsers,
+    // },
   ],
   navClouds: [
     {
@@ -172,7 +172,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        {/* <NavUser user={data.user} /> */}
       </SidebarFooter>
     </Sidebar>
   )
