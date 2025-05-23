@@ -58,11 +58,11 @@ const data = {
       url: "/posts",
       icon: IconFolder,
     },
-    // {
-    //   title: "Team",
-    //   url: "#",
-    //   icon: IconUsers,
-    // },
+    {
+      title: "Settings",
+      url: "/Settings",
+      icon: IconUsers,
+    },
   ],
   navClouds: [
     {
