@@ -19,5 +19,9 @@ Route::get("/test", function () {
     return Inertia::render("test.index");
 })->name("test");
 
+Route::get("/product/{id}", function (string $id) {
+    return "Product ID = $id";
+});
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
