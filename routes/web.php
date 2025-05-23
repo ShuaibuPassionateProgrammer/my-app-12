@@ -19,7 +19,7 @@ Route::get("/test", function () {
     return Inertia::render("test.index");
 })->name("test");
 
-Route::get("/product/{id}", function (string $id) {
+Route::get("/product/{id}", function ($id) {
     return "Product ID = $id";
 });
 
